@@ -1,0 +1,191 @@
+.main_h{
+    margin-top:70px;
+    font-weight:400;
+    font-size:1.3em;
+    margin-left:14.5px;
+}.cart {
+	border-radius: 11px;
+	width: calc(100vw - 59px);
+	padding: 15px;
+	opacity:1;
+	max-height:400px;
+transition:max-height .5s,padding .5s,margin .5s,opacity .5s;
+	margin-left: 14.5px;
+	margin-bottom: 12px
+}
+.disappearing{
+    opacity: 0;
+ 
+    overflow: hidden;
+    max-height:0;
+    padding: 0 15px;
+    margin: 0 14.5px;
+
+}
+.actions{
+   float: right;
+    margin-top: -33px;
+    margin-right: 24px;
+    position: relative;
+}
+.actions_svg{
+    fill:white;
+}
+.star_outlined{
+    display:block;
+    width: 29px;
+    height: 29px;
+}
+.star_filled{
+    display:none;
+    width: 29px;
+    height: 29px;
+}
+.copy{
+    height: 25px;
+    transform: translate(30.5px, -26.5px);
+    width: 25px;
+}
+.cart p{
+    	color: #fff
+}
+.cart p:not(.maint){
+	font-size: .85em;
+
+}
+
+.first {
+	margin-top: 68px!important
+}
+
+.maint {
+	font-weight: 400;
+	margin-bottom: 14px;
+	margin-top: -6px!important;
+	font-size: 1.2em!important
+}
+
+.datet {
+	margin-bottom: 12px;
+	margin-top:0;
+}
+
+.quartert {
+	font-style: italic;
+	float: right;
+	margin: 0;
+	margin-top: -11px!important
+}
+.dnone{
+    display:none;
+}
+.ifempty{
+    width:80px;
+    height:80px;
+    margin:auto;
+    font-size:3.7em;
+}
+.ifempty *{
+    font-size:2em;
+}
+.ifempty2{
+    margin:auto;
+    height:fit-content;
+    width:230px;
+    margin-top:10px;
+    text-align:center;
+    font-size:1.15em;
+    
+}
+.copied_badge{
+    padding:12px;
+    border-radius:11px;
+    background:#02b478;
+    position:fixed;
+    bottom:15px;
+    transition:bottom .3s ease-in-out;
+    width:111px;
+    left:calc((100vw - 111px) / 2);
+}
+.copied_badge p{
+    color:white;
+    margin:0;
+}
+.dblock{
+   bottom:85px;
+}
+@media(max-width:322px){
+    .actions{
+        margin-right:0;
+    }
+    .copy{
+    transform: translate(3px, 3px);
+}
+}
+.starlist_result div[data-year] > p{
+  margin: 19px 0;
+    margin-bottom: 3px;
+    margin-left: 14.5px;
+    font-size: 1.42em;
+}
+.starlist_result div[data-quarter] > p{
+       margin: 5px 0;
+    margin-bottom: 11px;
+    margin-left: 24px;
+    font-size: 1.15em;
+}
+.copyall{
+    padding: 15px;
+    width: calc(100vw - 30px);
+    border-radius: 11px;
+    margin-left: 14.5px;
+    background: linear-gradient(125deg,#09db95,#05c987);
+    border: none;
+    height: 74px;
+}
+.copyall p{
+    font-size: 1.6em;
+    font-family: 'Euclid';
+    color: white;
+    margin: 0;
+}
+.copyall svg{
+    width: 33px;
+    height: 33px;
+    fill: white;
+    margin-right: 7px;
+    vertical-align: middle;
+}
+.copyall span{
+    margin: 0;
+    position: relative;
+    top: 3.5px;
+}
+@keyframes badge_bouncedin{
+0%{
+bottom:15px;
+}
+40%{
+bottom:97px;
+}
+100%{
+bottom:85px;
+}}
+@keyframes badge_bouncedout{
+0%{
+bottom:85px;
+}
+60%{
+bottom:97px;
+}
+100%{
+bottom:15px;
+}}
+.badge_displayed{
+   animation:0.4s badge_bouncedin;
+animation-fill-mode: forwards;
+}
+.badge_not_displayed{
+animation:0.35s badge_bouncedout;
+animation-fill-mode: forwards;
+}

@@ -1,0 +1,109 @@
+
+.cart {
+	border-radius: 11px;
+	width: calc(100% - 59px);
+	padding: 15px;
+	margin:0 14.5px;
+	margin-top: 14px;
+}
+.cart p {
+	font-size: .85em;
+	margin-top: 0;
+	color: #fff
+}
+
+
+.maint {
+	font-weight: 400;
+	margin-top: -6px!important;
+	font-size: 1.2em!important
+}
+
+.quartert {
+	margin: 0;
+font-size:0.9em!important;
+	margin-top: -10px!important
+}
+.firstquarter{
+    background:linear-gradient(120deg,#72dd84, #64c374);
+}
+.secondquarter{
+    background:linear-gradient(120deg,#46a3f0, #2196f3);
+}
+.thirdquarter{
+    background:linear-gradient(120deg,#09cfe1, #07b5c5);
+}
+.fourthquarter{
+    background:linear-gradient(120deg,#8090ec, #5c6bc0);
+}
+.copyall{
+
+    padding:15px;
+    width: calc(100vw - 30px);
+    border-radius:11px;
+    margin-left:14.5px;
+    background:linear-gradient(125deg,#09db95,#05c987);
+    margin-top:70px;
+    border:none;
+    height:74px;
+}
+.copyall svg{
+    width:33px;
+    height:33px;
+    fill:white;
+    margin-right:7px;
+    vertical-align:middle;
+}
+.copyall p{
+        font-size: 1.6em;
+    font-family: 'Euclid';
+    color: white;
+    margin: 0;
+}
+.copyall_p{
+    margin:0;
+    position:relative;
+    top:3.5px;
+}
+.copied_badge{
+    padding:12px;
+    border-radius:11px;
+    background:#02b478;
+    position:fixed;
+    bottom:15px;
+    transition:bottom .3s ease-in-out;
+    width:111px;
+    left:calc((100vw - 111px) / 2);
+}
+.copied_badge p{
+    color:white;
+    margin:0;
+}
+@keyframes badge_bouncedin{
+0%{
+bottom:15px;
+}
+40%{
+bottom:97px;
+}
+100%{
+bottom:85px;
+}}
+@keyframes badge_bouncedout{
+0%{
+bottom:85px;
+}
+60%{
+bottom:97px;
+}
+100%{
+bottom:15px;
+}}
+.badge_displayed{
+   animation:0.4s badge_bouncedin;
+animation-fill-mode: forwards;
+}
+.badge_not_displayed{
+animation:0.35s badge_bouncedout;
+animation-fill-mode: forwards;
+}

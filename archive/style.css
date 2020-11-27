@@ -1,0 +1,38 @@
+
+.year {
+	font-size: 1.2em;
+	font-weight: 100
+}
+
+.cart {
+	transition:transform .25s ease-in;
+	border-radius: 11px;
+	width: calc(100% - 58px);
+	height: 60px;
+	padding: 15px;
+	margin:14px auto auto;
+}
+.cart p {
+	margin-top: 0;
+	color: #fff
+}
+
+.first {
+	margin-top: 70px!important
+}
+.archived_badge{
+padding: 8px 15px;
+width: calc(100vw - 58px);
+    margin: 14px auto auto;
+    margin-top:36px;
+border-radius:11px;
+}
+
+.archived_badge p{
+color:white;
+margin:0;
+}
+
+.linnn_div{
+margin:15px 0;
+}

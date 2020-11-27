@@ -1,0 +1,57 @@
+
+form p {
+	float: left;
+font-size:1em;
+}
+
+.test_p {
+	font-weight: 300;margin-top:15px;
+}
+
+
+form p {
+	margin-left: 3vw;
+	clear: both
+}
+
+form select {
+	float: left;
+	border: none;
+	margin-top: 16px;
+	margin-left: 5px;
+	font-size: 1em;
+font-family:'Euclid';
+	background-color: transparent
+}
+
+.btn_sub {
+    width:120px;
+    padding: 10.5px 0px;
+	background-color: #02b478;
+	color: #fff;
+	border: none;
+transition:background .3s ease-in;
+font-family:'Euclid';
+	border-radius: 10px;
+	font-size: 1.2em;
+}
+.btn_sub-div{
+    width:120px;
+    margin:auto;
+    height:auto;
+}
+.btn_sub:hover{
+background:#08c989;
+}
+.test_pblock {
+	margin:0 15px;
+background:transparent;
+}
+
+.test_h {
+	margin-left: 15px;
+	margin-top: 70px;
+margin-bottom:0;
+	font-size: 1.45em;
+font-weight:350;
+}

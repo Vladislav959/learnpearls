@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /404.php
+Disallow: /settings/
+Disallow: /starlist/
+Disallow: /test/
+
+Sitemap: https://learnpearls.ru/sitemap-prod2.xml

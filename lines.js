@@ -1,0 +1,6 @@
+var all = {
+a2020313:'<div class="cart" style="background-color: #01aebe"><p class="datet">13 неделя, 26.09.2020 - 02.10.2020</p><p class="maint">Экзамен</p><p class="quartert">Экзамен</p></div>',
+a202041:'<div class="cart" id="0" style="background-color: #5c6bc0" onclick="copy(this.id)"><p class="datet">1 неделя, 03.10.2020 - 09.10.2020</p><p class="maint">Ибо я не стыжусь благовествования Христова, потому что оно есть сила Божия ко спасению всякому верующему, во-первых, Иудею, потом и Еллину. В нём открывается правда Божия от веры в веру, как написано: «праведный верою жив будет».</p><p class="quartert">Рим. 1:16, 17</p></div>',
+a202042:'<div class="cart" id="1" style="background-color: #5c6bc0" onclick="copy(this.id)"><p class="datet">2 неделя, 10.10.2020 - 16.10.2020</p><p class="maint">А без веры угодить Богу невозможно; ибо надобно, чтобы приходящий к Богу веровал, что Он есть, и ищущим Его воздает.</p><p class="quartert">Евр. 11:6</p></div>',
+a202043:'<div class="cart" id="2" style="background-color: #5c6bc0" onclick="copy(this.id)"><p class="datet">3 неделя, 17.10.2020 - 23.10.2020</p><p class="maint">Вера же есть осуществление ожидаемого и уверенность в невидимом.</p><p class="quartert">Евр. 11:1</p></div>'
+}

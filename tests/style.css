@@ -1,0 +1,122 @@
+
+.ac,
+.cart p{
+	color: #fff
+}
+
+h1 {
+	font-size: 1.35em;
+font-weight:350;
+	padding-top: 55px;
+	margin-left: 14.5px
+}
+
+
+.cart {
+    background:linear-gradient(125deg, #f7519c, #e13482);
+	border-radius: 11px;
+	position:relative;
+	width: calc(100% - 58px);
+	padding: 15px 15px 4px;
+	margin:0 14.5px;
+	margin-top: 14px;
+}
+.cart p {
+	font-size: 1em;
+	margin-top: 0
+}
+
+.maint {
+	font-weight: 350;
+	font-size: 1.3em!important
+}
+
+.datet {
+	margin-bottom: 14px;
+	font-size: 1em!important;
+	margin-top: -6px!important
+}
+
+.ac {
+	text-decoration: none
+}
+.buggy{
+    width:30px;
+    height:30px;
+    top:14px;
+    right:10px;
+    position:absolute;
+}
+.buggy svg{
+    width:30px;
+    height:30px;
+}
+.betawindow{
+    position:fixed;
+    padding:15px;
+    bottom:80px;
+    width: calc(100vw - 57px);
+    left:14.5px;
+    z-index:998;
+    transform: translateY(150vw);
+border-radius:11px;
+}
+.betawindow_1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 1.17rem;
+}
+.betawindow_2{
+    font-size:1.05em;
+    margin:0;
+    margin-top:7px;
+}
+.betawindow_2 svg{
+    width:27.5px;
+    height:27.5px;
+    vertical-align:middle;
+}
+.betawindow_cross{
+    width:30px;
+        padding: 0;
+    vertical-align: middle;
+    margin: 0;
+    height:30px;
+}
+.bwc_div{
+    border-radius: 9px;
+    padding: 4px;
+    right: 0;
+    position: absolute;
+    height: fit-content;
+    top:-48px;
+}
+@keyframes bouncedin{
+0%{
+transform:translateY(150vw);
+}
+78%{
+transform: translateY(-10px);
+}
+100%{
+transform: translateY(0px);
+}}
+@keyframes bouncedout{
+0%{
+transform:translateY(0px);
+}
+22%{
+transform: translateY(-12px);
+}
+100%{
+transform: translateY(150vw);
+}}
+.windowopened{
+    animation:0.5s bouncedin;
+animation-fill-mode: forwards;
+}
+.windowclosed{
+animation:0.5s bouncedout;
+animation-fill-mode: forwards;
+}
