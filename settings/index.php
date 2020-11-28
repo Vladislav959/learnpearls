@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-      <link rel="stylesheet" type="text/css" href="/settings/style.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT'] . '/settings/style.css')?>">
-<link rel="stylesheet" type="text/css" href="/main.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT'] . '/main.css')?>">
+      <link rel="stylesheet" type="text/css" href="/settings/style.css">
+<link rel="stylesheet" type="text/css" href="/main.css">
 	<meta charset="utf-8">
 
  <script
@@ -33,17 +33,7 @@
 <p class="dark_text headh leftc">Темная тема:</p>
 <button class="dark_button static_btn rightc" onclick="toggleTheme()">hhsh</button></form>
 <p class="beta_text headh leftc">Тестовые функции:</p>
-<form id="beta_form" method="post">
-<?php
-if(!isset($_COOKIE['isbeta']) or $_COOKIE['isbeta']=="no"){
-echo '<input id="beta_hidden" type="hidden" value="yes" name="isbeta">';
-$betabtnvalue = "Включить";
-}
-if($_COOKIE['isbeta']=="yes"){
-echo '<input id="beta_hidden" type="hidden" value="no" name="isbeta">';
-$betabtnvalue = "Выключить";
-}
-?><button class="beta_button static_btn rightc" type="submit"><?php echo $betabtnvalue;?></button></form>
+<button class="beta_button static_btn rightc">hj</button>
 <div class="vk leftc"><a href-data="https://vk.com/learnpearls"><p><svg viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="logo_vk_28">
