@@ -60,17 +60,20 @@ body{
 --cross-fill:#6f6f6f;
 --betawindow-bg:#fff;
 --betawindow-shadow:-10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(146 146 146 / 12%);
---btn-
+--btn-shadow:box-shadow:-5px -5px 15px rgb(84 84 84 / 50%), 10px 10px 15px rgb(132 132 132 / 12%);
+--input-shadow:-10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(70,70,70,0.12);
 }
 body[data-theme="dark"]{
 --cross-fill:#fff;
 --betawindow-bg:#000;
 --betawindow-shadow:-10px -10px 15px rgb(52 51 51 / 50%), 10px 10px 10px rgb(66 66 66 / 12%);
+--btn-shadow:box-shadow:-5px -5px 15px rgb(84 84 84 / 50%), 10px 10px 15px rgb(132 132 132 / 12%);
+--input-shadow:-10px -10px 15px rgb(34 34 34 / 50%), 10px 10px 15px rgb(133 132 132 / 12%);
 }
-.dark .change_input{background:var(--background-primary);color:var(--color-primary);border-color:var(--color-primary);}
-.dark .static_btn{box-shadow:-5px -5px 15px rgb(84 84 84 / 50%), 10px 10px 15px rgb(132 132 132 / 12%);}
-.dark .change_input{box-shadow:-10px -10px 15px rgb(34 34 34 / 50%), 10px 10px 15px rgb(133 132 132 / 12%);}
-.dark .madeby_div1 {
+.change_input{background:var(--background-primary);color:var(--color-primary);border-color:var(--color-primary);}
+.static_btn{box-shadow: var(--btn-shadow);}
+ .change_input{box-shadow:var(--input-shadow);}
+.madeby_div1 {
 background:var(--background-primary);
 }
 .betawindow, .bwc_div{
@@ -96,7 +99,7 @@ color:var(--cross-fill);
 color:black;
 }
 .notdark .static_btn{box-shadow: -10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(70,70,70,0.12);}
-.notdark .change_input{box-shadow: -10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(70,70,70,0.12);}
+.notdark .change_input{box-shadow: var(--input-shadow);}
 .notdark .betawindow_cross{
 fill:black;
 }
