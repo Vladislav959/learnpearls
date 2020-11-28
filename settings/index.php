@@ -134,12 +134,13 @@ const toggleTheme = function(){
 	let curtheme = localStorage.getItem('theme');
 	let theme = '';
 	if(curtheme == 'light'){
-	theme = 'dark';
+	 bodyElSettings.dataset.theme = 'dark';
+    localStorage.setItem('theme', 'dark');
 	}
 	else if(curtheme == 'dark'){
-	theme = 'light';}
-    bodyElSettings.dataset.theme = theme;
-    localStorage.setItem('theme', theme);
+	 bodyElSettings.dataset.theme = 'light';
+    localStorage.setItem('theme', 'light');
+	}
 }
        
 $(document).ready(function() {
