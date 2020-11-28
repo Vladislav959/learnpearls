@@ -144,8 +144,8 @@ background:var(--header-bg);
     height:36px;
 }
 .page {
-  opacity: 1;
-  transition: opacity 0.5s; 
+  opacity: 0;
+  transition: opacity 0.5s;
 }
 .fadeout{
     opacity:0;
