@@ -2,44 +2,43 @@
 .header {
 	position: fixed
 }
-@font-face{
-font-family:'Euclid';
-src:url('/euclid.ttf');
+body{
+--background-primary:#fff;
+--text-primary:#6f6f6f;
 }
-body {
-	margin: 0;
-	font-family: 'Euclid';
+body[data-theme="dark"]{
+--background-primary:#1c1d26;
+--text-primary:#b0b0b0;
 }
-::moz-selection,
-::selection {
-	color: #fff;
-	background-color: #02b478;
+body{
+background:var(--background-primary);
 }
 p {
 	-moz-user-select: none;
 	-khtml-user-select: none;
-	user-select: none
+	user-select: none;
+color:var(--text-primary);
 }
 a {
-    background:none!important;
-	text-decoration: none
+text-decoration: none;
+-webkit-tap-highlight-color: transparent;
 }
 
 .buttons {
-	bottom: 14px;
+    bottom: 14px;
     left: 14.5px;
     position: fixed;
     border-radius: 15px;
     width: calc(100vw - 29px);
     height: 52px;
-z-index:999;
+    z-index:999;
     transition: border.3s ease-in;
     border:1px solid transparent;
 }
 
 .buttons button {
-	border: none;
-	background:transparent;
+    border: none;
+    background:transparent;
     height: fit-content;
     width:calc((100vw - 29px) / 5);
     padding: 12px 0;
@@ -48,8 +47,8 @@ z-index:999;
     border-color:#02a66f!important;
 }
 .buttons svg {
-	width: 26px;
-	height:26px;
+    width: 26px;
+    height:26px;
 }
 .a5 svg{
     width:31px;
@@ -59,7 +58,7 @@ z-index:999;
     fill:#02b478;
 }
 .a5 button{
-        padding: 0;
+    padding: 0;
     padding-top: 10px;
     padding-bottom: 9px;
 }
@@ -140,7 +139,4 @@ z-index:999;
     100%{
         opacity:1;
     }
-}
-a{
-    -webkit-tap-highlight-color: transparent;
 }
