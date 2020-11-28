@@ -1,7 +1,8 @@
-var delay = 275;
-var destination;
-var alllinks;
-var allpage = document.querySelector('.page');
+window.onload = function(){
+let delay = 275;
+let destination;
+let alllinks;
+let allpage = document.querySelector('.page');
 allpage.classList.add('fadein');
 setTimeout(function(){
 allpage.classList.remove('fadein');
@@ -15,3 +16,4 @@ alllinks.forEach(btn => {
    };
 });
 }, 600);
+}
