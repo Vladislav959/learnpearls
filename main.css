@@ -2,6 +2,10 @@
 .header {
 	position: fixed
 }
+@font-face{
+font-family:'Euclid';
+src:url('/euclid.ttf');
+}
 body{
 --background-primary:#fff;
 --color-primary:#6f6f6f;
