@@ -1,3 +1,8 @@
+const bodyEl = document.getElementsByTagName('body');
+const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+if (currentTheme) {
+    htmlEl.dataset.theme = currentTheme;
+}
 window.onload = function(){
 let delay = 275;
 let destination;
