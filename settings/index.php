@@ -31,7 +31,7 @@
 
 
 <p class="dark_text headh leftc">Темная тема:</p>
-<button class="dark_button static_btn rightc">hhsh</button></form>
+<button class="dark_button static_btn rightc" onclick="toggleTheme()">hhsh</button></form>
 <p class="beta_text headh leftc">Тестовые функции:</p>
 <form id="beta_form" method="post">
 <?php
@@ -129,13 +129,19 @@ document.querySelector('.betawindow').classList.add('windowclosed');
 }
 const bodyElSettings = document.getElementsByTagName('body');
 
-document.querySelector('.dark_button').onclick = function(){
 // When the user changes the theme, we need to save the new value on local storage
-const toggleTheme = (theme) => {
+const toggleTheme = function(){
+	let curtheme = localStorage.getItem('theme');
+	let theme = '';
+	if(curtheme == 'light'){
+	theme = 'dark';
+	}
+	else if(curtheme == 'dark'){
+	theme = 'light';}
     bodyElSettings.dataset.theme = theme;
     localStorage.setItem('theme', theme);
 }
-       }
+       
 $(document).ready(function() {
     $('#beta_form').submit(function(e) {
         e.preventDefault();
