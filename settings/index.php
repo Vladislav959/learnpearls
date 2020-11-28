@@ -122,6 +122,7 @@ const bodyElSettings = document.querySelector('body');
 // When the user changes the theme, we need to save the new value on local storage
 const toggleTheme = function(){
 	let curtheme = localStorage.getItem('theme');
+	alert(curtheme);
 	if(curtheme == 'light'){
 	 bodyElSettings.dataset.theme = 'dark';
     localStorage.setItem('theme', 'dark');
@@ -131,6 +132,7 @@ const toggleTheme = function(){
     localStorage.setItem('theme', 'light');
 	}
 	else{
+		alert('bh');
 	 bodyElSettings.dataset.theme = 'dark';
     localStorage.setItem('theme', 'dark');
 	}
