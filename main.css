@@ -4,7 +4,7 @@
 }
 body{
 --background-primary:#fff;
---text-primary:#6f6f6f;
+--color-primary:#6f6f6f;
 --buttons-bg:#000;
 --buttons-shadow: -10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(70,70,70,0.12);
 --buttons-fill:#6f6f6f;
@@ -14,7 +14,7 @@ body{
 }
 body[data-theme="dark"]{
 --background-primary:#1c1d26;
---text-primary:#b0b0b0;
+--color-primary:#b0b0b0;
 --buttons-bg:#000;
 --buttons-shadow: -10px -10px 15px rgb(52 51 51 / 50%), 10px 10px 10px rgb(100 100 100 / 12%);
 --buttons-fill:#b0b0b0;
@@ -30,7 +30,7 @@ p,h1,h2,h3,h4,h5,li{
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
-color:var(--text-primary);
+color:var(--color-primary);
 }
 a {
 text-decoration: none;
