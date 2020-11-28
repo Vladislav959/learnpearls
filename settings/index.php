@@ -1,21 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta class="dark_theme" name="" content="">
       <link rel="stylesheet" type="text/css" href="/settings/style.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT'] . '/settings/style.css')?>">
 <link rel="stylesheet" type="text/css" href="/main.css?v=<?=filemtime($_SERVER['DOCUMENT_ROOT'] . '/main.css')?>">
-   <?php
-if(isset($_COOKIE['isdark']) and $_COOKIE['isdark']=="yes"){
-echo '<meta name="theme-color" content="#1c1d26">
-';}
-        function isMobile() { 
-
-return preg_match("/(android|avantgo|blackberry|bolt|boost|cricket|docomo|fone|hiptop|mini|mobi|palm|phone|pie|tablet|up\.browser|up\.link|webos|wos)/i", $_SERVER["HTTP_USER_AGENT"]);
-}
-
-if(isMobile()){include ($_SERVER['DOCUMENT_ROOT'] . "/mob.php");}
-else {include ($_SERVER['DOCUMENT_ROOT'] . "/notmob.php");}
-?>
 	<meta charset="utf-8">
 
  <script
@@ -27,15 +14,8 @@ else {include ($_SERVER['DOCUMENT_ROOT'] . "/notmob.php");}
 	
 	<title>Настройки | Памятные Жемчужины</title>
 		
-</head><?php include($_SERVER['DOCUMENT_ROOT'] . "/warning.php");
-if(isset($_COOKIE['isdark']) and $_COOKIE['isdark']=="yes"){
-$theme = 'dark';
-}
-elseif($_COOKIE['isdark']=="no" or !isset($_COOKIE['isdark'])){
-$theme = 'notdark';
-}
-?>
-<body <?php echo 'class="' . $theme . '"';?>>
+</head>
+<body>
 <section class="page">
 	<div class="header">
 		<p class="notmargin">Настройки</p>
@@ -51,18 +31,7 @@ $theme = 'notdark';
 
 
 <p class="dark_text headh leftc">Темная тема:</p>
-<form id="dark_form" method="post">
-<?php
-if(!isset($_COOKIE['isdark']) or $_COOKIE['isdark']=="no"){
-echo '<input type="hidden" id="dark_hidden" name="isdark" value="yes">';
-$btnvalue ="Включить";
-}
-if($_COOKIE['isdark']=="yes"){
-echo '<input type="hidden" id="dark_hidden" name="isdark" value="no">';
-$btnvalue="Выключить";
-}
-?>
-<button type="submit" class="dark_button static_btn rightc"><?php echo $btnvalue;?></button></form>
+<button class="dark_button static_btn rightc">hhsh</button></form>
 <p class="beta_text headh leftc">Тестовые функции:</p>
 <form id="beta_form" method="post">
 <?php
@@ -158,19 +127,15 @@ document.querySelector('.bwc_div').onclick = function(){
 document.querySelector('.betawindow').classList.remove('windowopened');
 document.querySelector('.betawindow').classList.add('windowclosed');
 }
-var el = document.querySelector('body');
- $(document).ready(function() {
-    $('#dark_form').submit(function(e) {
-        e.preventDefault();
-        $.ajax({
-            type: "POST",
-            url: '/settings/dark.php',
-            data: $(this).serialize(),
-            success: function(){$('body').toggleClass('dark');$('body').toggleClass('notdark');if(hasClass(el,'notdark')){document.querySelector('.dark_button').innerHTML = 'Включить'}else if(hasClass(el,'dark')){document.querySelector('.dark_button').innerHTML = 'Выключить'};if(document.querySelector('#dark_hidden').getAttribute('value') == 'yes'){document.querySelector('#dark_hidden').setAttribute('value', 'no');document.querySelector('.dark_theme').setAttribute('name','theme-color');document.querySelector('.dark_theme').setAttribute('content','#1c1d26');}else if(document.querySelector('#dark_hidden').getAttribute('value') == 'no'){document.querySelector('#dark_hidden').setAttribute('value', 'yes');document.querySelector('.dark_theme').setAttribute('name','theme-color');document.querySelector('.dark_theme').setAttribute('content','white');}}
-       });
-     });
-});
-       
+const bodyElSettings = document.getElementsByTagName('body');
+
+document.querySelector('.dark_button').onclick = function(){
+// When the user changes the theme, we need to save the new value on local storage
+const toggleTheme = (theme) => {
+    bodyElSettings.dataset.theme = theme;
+    localStorage.setItem('theme', theme);
+}
+       }
 $(document).ready(function() {
     $('#beta_form').submit(function(e) {
         e.preventDefault();
