@@ -16,15 +16,17 @@ body[data-theme="dark"]{
 --background-primary:#1c1d26;
 --text-primary:#b0b0b0;
 --buttons-bg:#000;
+--buttons-shadow: -10px -10px 15px rgb(52 51 51 / 50%), 10px 10px 10px rgb(100 100 100 / 12%);
 --buttons-fill:#b0b0b0;
 --header-bg:#b0b0b0;
 --before-bg:#1c1d26;
 --before-color:#fff;
 }
 body{
+box-sizing:border-box;
 background:var(--background-primary);
 }
-p {
+p,h1,h2,h3,h4,h5,li{
 	-moz-user-select: none;
 	-khtml-user-select: none;
 	user-select: none;
@@ -37,6 +39,8 @@ text-decoration: none;
 .buttons {
     bottom: 14px;
     left: 14.5px;
+    background:var(--buttons-bg);
+    box-shadow:var(--buttons-shadow);
     position: fixed;
     border-radius: 15px;
     width: calc(100vw - 29px);
@@ -46,6 +50,12 @@ text-decoration: none;
     border:1px solid transparent;
 }
 
+.buttons a:not(.active) svg{
+fill:var(--buttons-fill);
+}
+.buttons a.active svg{
+fill:#02b478;
+}
 .buttons button {
     border: none;
     background:transparent;
@@ -84,6 +94,7 @@ text-decoration: none;
 .header {
 	top: 0;
     padding: 5px 14px;
+background:var(--header-bg);
     z-index: 999;
     width: calc(100vw - 28px);
     height: 46px;
