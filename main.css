@@ -27,6 +27,7 @@ body[data-theme="dark"]{
 --before-color:#fff;
 }
 body{
+	font-family:'Euclid';
 box-sizing:border-box;
 background:var(--background-primary);
 }
