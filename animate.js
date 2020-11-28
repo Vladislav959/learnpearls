@@ -3,7 +3,6 @@ const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme
 if (currentTheme) {
     htmlEl.dataset.theme = currentTheme;
 }
-window.onload = function(){
 let delay = 275;
 let destination;
 let alllinks;
@@ -21,4 +20,3 @@ alllinks.forEach(btn => {
    };
 });
 }, 600);
-}
