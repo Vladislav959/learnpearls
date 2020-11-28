@@ -1,4 +1,4 @@
-const bodyEl = document.getElementsByTagName('body');
+const bodyEl = document.querySelector('body');
 const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
 if (currentTheme) {
     htmlEl.dataset.theme = currentTheme;
