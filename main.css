@@ -9,7 +9,7 @@ src:url('/euclid.ttf');
 body{
 --background-primary:#fff;
 --color-primary:#6f6f6f;
---buttons-bg:#000;
+--buttons-bg:#fff;
 --buttons-shadow: -10px -10px 15px rgba(242, 242, 242,0.5), 10px 10px 15px rgba(70,70,70,0.12);
 --buttons-fill:#6f6f6f;
 --header-bg:#02b478;
