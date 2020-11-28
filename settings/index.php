@@ -117,7 +117,7 @@ document.querySelector('.bwc_div').onclick = function(){
 document.querySelector('.betawindow').classList.remove('windowopened');
 document.querySelector('.betawindow').classList.add('windowclosed');
 }
-const bodyElSettings = document.getElementsByTagName('body');
+const bodyElSettings = document.querySelector('body');
 
 // When the user changes the theme, we need to save the new value on local storage
 const toggleTheme = function(){
